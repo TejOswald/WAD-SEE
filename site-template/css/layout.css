@@ -1,0 +1,89 @@
+/* Container */
+.container {
+  width: min(114rem, 92%);
+  margin: 0 auto;
+}
+
+.narrow {
+  width: min(76rem, 92%);
+}
+/* End of Container */
+
+/* Sections */
+.section {
+  padding: 8rem 0;
+  background-color: #ffffff;
+}
+
+.section-alt {
+  background-color: #f6f8fb;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.section-title h2 {
+  font-size: clamp(2.8rem, 3.5vw, 3.8rem);
+  color: #0f172a;
+}
+
+.section-title p {
+  font-size: 1.7rem;
+  color: #64748b;
+  margin-top: 0.6rem;
+}
+/* End of Sections */
+
+/* Inner Page Header */
+.page-header {
+  padding: 11rem 0 4.8rem 0;
+  background: linear-gradient(135deg, #0f172a, #154fb0);
+  color: #ffffff;
+}
+
+.page-header h1 {
+  font-size: clamp(3rem, 4vw, 4.4rem);
+}
+
+.page-header p {
+  font-size: 1.7rem;
+  color: #c7d6f5;
+}
+/* End of Inner Page Header */
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* End of Grid */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 6rem 0;
+  }
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Responsive */

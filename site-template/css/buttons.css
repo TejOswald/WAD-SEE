@@ -1,0 +1,90 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.4rem;
+  border: 0.2rem solid transparent;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-sm {
+  padding: 0.6rem 1.6rem;
+  font-size: 1.4rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #1f6feb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #154fb0;
+}
+
+.btn-accent {
+  background-color: #ff8a3d;
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background-color: #e8731f;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #1f6feb;
+  border-color: #1f6feb;
+}
+
+.btn-outline:hover {
+  background-color: #1f6feb;
+  color: #ffffff;
+}
+
+.btn-ghost {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+/* End of Buttons */
+
+/* Danger And Disabled Buttons */
+.btn-danger {
+  background-color: transparent;
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn:disabled {
+  background-color: #cbd5e1;
+  border-color: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+}
+/* End of Danger And Disabled Buttons */
+
+/* Button Rows */
+.row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+/* End of Button Rows */

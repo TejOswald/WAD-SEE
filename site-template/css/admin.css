@@ -1,0 +1,113 @@
+/* Stat Cards */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.admin-stats .card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 2rem;
+}
+
+.admin-stats strong {
+  font-size: 2.6rem;
+  color: #1f6feb;
+}
+/* End of Stat Cards */
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 0.1rem solid #e2e8f0;
+}
+
+.admin-tabs button {
+  padding: 1.1rem 2rem;
+  background: none;
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.admin-tabs button:hover {
+  color: #1f6feb;
+}
+
+.admin-tabs button.active {
+  border-bottom-color: #1f6feb;
+  color: #1f6feb;
+}
+/* End of Tabs */
+
+/* Section Bar */
+.admin-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.admin-bar h3 {
+  font-size: 2rem;
+  color: #0f172a;
+}
+/* End of Section Bar */
+
+/* Data Table */
+.table-wrap {
+  overflow-x: auto;
+  background-color: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 1.4rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.45rem;
+}
+
+.data-table th {
+  padding: 1.3rem 1.6rem;
+  background-color: #f6f8fb;
+  font-weight: 600;
+  color: #475569;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 1.2rem 1.6rem;
+  border-top: 0.1rem solid #e2e8f0;
+  vertical-align: middle;
+  color: #1e293b;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+/* End of Data Table */
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .admin-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* End of Responsive */

@@ -1,0 +1,31 @@
+/* Type Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.chip-btn {
+  padding: 0.7rem 1.6rem;
+  background-color: #ffffff;
+  border: 0.15rem solid #e2e8f0;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1e293b;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.chip-btn:hover {
+  border-color: #1f6feb;
+}
+
+.chip-btn.active {
+  background-color: #1f6feb;
+  border-color: #1f6feb;
+  color: #ffffff;
+}
+/* End of Type Chips */

@@ -1,0 +1,76 @@
+/* Contact Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3.2rem;
+  align-items: start;
+}
+
+.contact-form {
+  padding: 2.8rem;
+}
+
+.contact-form h3 {
+  font-size: 2.2rem;
+  color: #0f172a;
+}
+/* End of Contact Layout */
+
+/* Info Cards */
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.info-card > span {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #1f6feb;
+  border-radius: 1.2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.info-card strong {
+  color: #0f172a;
+}
+/* End of Info Cards */
+
+/* FAQ */
+.faq {
+  border-bottom: 0.1rem solid #e2e8f0;
+}
+
+.faq button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq p {
+  padding-bottom: 1.6rem;
+}
+/* End of FAQ */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Responsive */

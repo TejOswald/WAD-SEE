@@ -1,0 +1,183 @@
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f172a 0%, #154fb0 60%, #1f6feb 100%);
+  color: #ffffff;
+}
+
+.hero::after {
+  content: '';
+  width: 52rem;
+  height: 52rem;
+  position: absolute;
+  right: -14rem;
+  bottom: -16rem;
+  border-radius: 50%;
+  background-color: #ff8a3d;
+  opacity: 0.18;
+}
+
+.hero-inner {
+  max-width: 76rem;
+  margin-left: max(4%, calc((100% - 114rem) / 2));
+  margin-right: auto;
+  padding-top: 6.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(3.6rem, 5.5vw, 6.4rem);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  max-width: 56rem;
+  font-size: 1.9rem;
+  color: #dbe6fb;
+  margin-bottom: 3.2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+/* End of Hero */
+
+/* Stats */
+.stats {
+  padding: 3.6rem 0;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 3.4rem;
+  color: #ff8a3d;
+}
+
+.stat span {
+  color: #cbd5e1;
+}
+/* End of Stats */
+
+/* Features */
+.feature {
+  height: 100%;
+  padding: 2.6rem;
+}
+
+.feature-icon {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.9rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+/* End of Features */
+
+/* How It Works */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.step h3 {
+  font-size: 1.9rem;
+  color: #0f172a;
+}
+
+.step-no {
+  width: 5.2rem;
+  height: 5.2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f6feb;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+/* End of How It Works */
+
+/* Testimonials */
+.quote {
+  height: 100%;
+  padding: 2.6rem;
+}
+
+.quote p {
+  font-style: italic;
+  color: #334155;
+  margin-bottom: 1.6rem;
+}
+
+.quote footer strong {
+  color: #0f172a;
+}
+/* End of Testimonials */
+
+/* Call To Action */
+.cta {
+  padding: 7rem 0;
+  background: linear-gradient(135deg, #154fb0, #1f6feb);
+  color: #ffffff;
+}
+
+.cta h2 {
+  font-size: 3.4rem;
+}
+
+.cta p {
+  font-size: 1.7rem;
+  color: #dbe6fb;
+  margin: 0.8rem 0 2.6rem 0;
+}
+/* End of Call To Action */
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-inner {
+    margin-left: 4%;
+  }
+
+  .hero p {
+    font-size: 1.7rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Responsive */
